@@ -1,0 +1,44 @@
+.Container-Navbar {
+    display: flex;
+    flex: 1;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70em;
+    height: 7em;
+    background: #FFF;
+    text-align: center;
+}
+
+.NavCard {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+.NavCard:hover {
+    background: #000;
+}
+
+.TodaLoja {
+    width: 140px;
+}
+
+.Vestuario {
+    width: 160px;
+}
+
+.Acessorios {
+    width: 200px;
+    margin-left: 5px;
+}
+
+.Colecionaveis {
+    width: 250px;
+    margin-left: 5px;
+}
+
+.Casaedecoracao {
+    margin-top: 10px;
+    width: 280px;
+}
