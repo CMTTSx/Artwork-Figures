@@ -11,9 +11,9 @@
 
 .CardProdutos {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
-    margin: 100px 0 0px 120px;
+    margin: 100px 0 0px 105px;
     width: 320px;
-    height: 500px;
+    height: 550px;
     border-radius: 19px;
 }
 
@@ -25,23 +25,22 @@
     background: #84F076;
     border-radius: 7px;
     margin-top: 20px;
-    margin-left: auto;
+    margin-left: 55px;
     margin-right: auto;
 }
-
-
 
 .favoritotag {
     width: 30px;
     margin: 20px 0 0 270px;
+    cursor: pointer;
 }
 
 .compartilharTag {
     width: 30px;
     margin: 10px 0 0 270px;
+    cursor: pointer;
 
 }
-
 
 .descricao {
     background: #F8F8F8;
@@ -53,7 +52,10 @@
 }
 
 .imagemProduto {
-    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    height: max-content;
     border-radius: 0px;
 }
 

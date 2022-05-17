@@ -8,7 +8,9 @@
     background-color: #FFF;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
     width: 550px;
+    height: 30px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -19,8 +21,22 @@
 
 input {
     width: 80%;
-    margin: 10em 10% 0 0;
+    margin: 20em 10% 0 0;
     border: none;
     outline: none;
     border-radius: 10px;
+}
+
+.minhaConta {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    background: #276FBF;
+    margin: -35px 0 0 1400px;
+    cursor: pointer;
+}
+
+.minhaConta h5 {
+    margin-top: 9px;
 }

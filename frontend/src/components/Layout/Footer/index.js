@@ -1,10 +1,15 @@
 import React from 'react';
 
+import { BrowserRouter as Router,
+  Switch,
+  Route,
+  Link } from 'react-router-dom';
+
 //Importando styles
 import styles from './Footer.css'
 
 //Importando Imagem
-import formas_de_pagamento from '../../assets/metodosdepagamento.png'
+import formas_de_pagamento from '../../../assets/metodosdepagamento.png'
 
 
 export default function Footer() {
@@ -16,16 +21,26 @@ export default function Footer() {
         <div className='Institucional'>
           
           <div className='titulo'>INSTITUCIONAL</div>
-          <div className='info'>Home</div>
-          <div className='info'>Sobre a Artwork Figures</div>
-          <div className='info'>Entregas</div>
+          <Link> 
+            <div className='info'>Home</div>
+          </Link>
+          
+          <Link to='/Sobre-nos'> 
+            <div className='info'>Sobre a Artwork Figures</div>
+          </Link>
+
+         <Link to='/Entregas'>
+            <div className='info'>Entregas</div>
+         </Link>
   
           </div>
   
           <div className='Minha-Conta'>
   
-          <div className='titulo'>MINHA CONTA</div>
-          <div className='info'>Meu Cadastro</div>
+          <Link to='/Minha-Conta'>
+            <div className='titulo'>MINHA CONTA</div>
+          </Link>
+
           <div className='info'>Meus Pedidos</div>
           <div className='info'>Meu Carrinho</div>
   
@@ -42,8 +57,14 @@ export default function Footer() {
           <div className='Duvidas'> 
   
             <div className='titulo'>DÚVIDAS</div>
-            <div>FAQ - Dúvidas Frequentes</div>
-            <div>Trocas e Devoluções</div>
+            
+            <Link to='/FAQ'>
+              <div>FAQ - Dúvidas Frequentes</div>
+            </Link>
+
+            <Link to='/Trocas-e-Devolucoes'>
+              <div>Trocas e Devoluções</div>
+            </Link>
   
           </div>
 
