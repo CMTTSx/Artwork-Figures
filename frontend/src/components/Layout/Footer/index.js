@@ -21,7 +21,7 @@ export default function Footer() {
         <div className='Institucional'>
           
           <div className='titulo'>INSTITUCIONAL</div>
-          <Link> 
+          <Link to='/'> 
             <div className='info'>Home</div>
           </Link>
           
