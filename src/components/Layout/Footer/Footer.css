@@ -1,0 +1,68 @@
+
+.alinhamento-div {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFF;
+}
+
+.Institucional, .Minha-Conta, .Fale-Conosco, .Duvidas, .Forma-de-Pagamento {
+    margin-left: 4%;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.Institucional {
+    text-align: center;
+}
+
+.Minha-Conta {
+    text-align: center;
+}
+
+.Fale-Conosco {
+    text-align: center;
+}
+
+.Duvidas {
+    text-align: center;
+}
+
+h5 {
+    margin: 10px;
+    text-align: center;
+}
+
+.formas-de-pagamento-icon {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+}
+
+.info {
+    color: #FFF;
+}
+
+.info:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #1F2232;
+    color: #FFF;
+    padding: 10px;
+    font-size: 16px;
+}
+
+a:link {
+   text-decoration: none;
+  }
