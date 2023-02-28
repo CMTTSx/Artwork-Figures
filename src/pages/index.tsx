@@ -6,6 +6,7 @@ import styles from '@/styles/Home.module.css'
 //Components
 import Navbar from '@/components/Navbar'
 import SearchBar from '@/components/SearchBar'
+import Adsbar from '@/components/Adsbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <SearchBar />
+      <Adsbar />
     </>
   )
 }
