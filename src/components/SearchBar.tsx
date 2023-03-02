@@ -24,6 +24,7 @@ export default function InputWithIcon() {
       <Box sx={{ '& > :not(style)': { m: 1 }, display: 'flex', mx: 'auto', backgroundColor: 'white', borderRadius: 10,}}>
         <FormControl variant="standard">
           <Input
+            disableUnderline={true}
             placeholder='Digite o que você procura...'
             endAdornment={
               <InputAdornment position='start' >

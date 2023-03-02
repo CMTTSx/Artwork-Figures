@@ -15,7 +15,7 @@ export default function adsbar() {
     
     }}>
     
-    <Box sx={{display: 'flex', flexDirection: 'row',}}>
+    <Box sx={{display: 'flex', flexDirection: 'row', width: '100%' }}>
     
     <Box sx={{ml: 8, mt: 1, display: 'flex' }}>
     <Image src={freteRapidoIcon} alt='freterapidoicon' />
