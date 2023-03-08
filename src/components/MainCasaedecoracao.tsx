@@ -4,6 +4,7 @@ import React from 'react'
 //Components
 import Card from './Card'
 import Navigation from './NavigationCasaedecoracao'
+import Footer from './Footer';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -68,6 +69,7 @@ export default function Main() {
       </Box>
       
       <Navigation />
+      <Footer />
 
       </Box>
   )
