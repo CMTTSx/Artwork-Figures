@@ -1,6 +1,7 @@
 import { Box } from '@mui/material'
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 
 //Icons
 import Logo from '../../src/assets/Logotipo.png';
@@ -34,9 +35,11 @@ export default function Navbar() {
     
     <Box sx={NavbarConfig}>
         
+       <Link href='/'>
        <Box sx={LogoConfig}>
        <Image src={Logo} alt='Logo' />
        </Box>
+       </Link>
 
        <Box sx={TypoNavbar}>
         <Box sx={{pr: 1, cursor: 'pointer',}}><h3>Seja Franqueado |</h3></Box>

@@ -2,8 +2,8 @@ import { Box, Grid, Paper, Typography, styled } from '@mui/material'
 import React from 'react'
 
 //Components
-import Card from '../components/Card'
-import Navigation from '@/components/NavigationTodaLoja'
+import Card from './Card'
+import Navigation from '../components/NavigationVestuario'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -41,28 +41,28 @@ export default function Main() {
       <Box sx={{ width: '100%', height: '50rem' }}>
         <Grid sx={{ml: 0, mr: 'auto'}} container spacing={5} columns={32}>
           <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
+            <Item sx={itemConfig}><Card /></Item>
           </Grid>
           <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
+            <Item sx={itemConfig}><Card /></Item>
           </Grid>
           <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
+            <Item sx={itemConfig}><Card /></Item>
           </Grid>
           <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
+            <Item sx={itemConfig}><Card /></Item>
           </Grid>
           <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
+            <Item sx={itemConfig}><Card /></Item>
           </Grid>
           <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
+            <Item sx={itemConfig}><Card /></Item>
           </Grid>
           <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
+            <Item sx={itemConfig}><Card /></Item>
           </Grid>
           <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
+            <Item sx={itemConfig}><Card /></Item>
           </Grid>
         </Grid>
       </Box>

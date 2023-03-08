@@ -39,7 +39,21 @@ const iconConfig = {
 
 }
 
+
+
 export default function Card() {
+
+
+  //Favorite Function
+  function favorite() {
+    alert('Adicionado aos favoritos!')
+  }
+
+  //Share Function
+  function shareProduct() {
+    alert('Compartilhado!')
+  }
+
   return (
     <Box sx={{
     }}>
@@ -56,10 +70,14 @@ export default function Card() {
       mr: 'end',
       mt: -28,
     }}>
-      <Button sx={iconConfig}>
+      <Button sx={iconConfig}
+      onClick={favorite}
+      >
       <FavoriteBorderIcon />
       </Button>
-      <Button sx={iconConfig}>
+      <Button
+      onClick={shareProduct}
+      sx={iconConfig}>
       <ShareIcon />
       </Button>
 
