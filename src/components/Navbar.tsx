@@ -27,6 +27,8 @@ const TypoNavbar = {
     ml: 'auto',
     pr: 20,
     fontSize: 14,
+
+   
 }
 
 export default function Navbar() {
@@ -42,9 +44,15 @@ export default function Navbar() {
        </Link>
 
        <Box sx={TypoNavbar}>
-        <Box sx={{pr: 1, cursor: 'pointer',}}><h3>Seja Franqueado |</h3></Box>
-        <Box sx={{pr: 1, cursor: 'pointer',}}><h3>Nossas Lojas |</h3></Box>
-        <Box sx={{pr: 1, cursor: 'pointer',}}><h3>Fale Conosco</h3></Box>
+        <Box sx={{pr: 1, cursor: 'pointer',  "&: hover" : {
+        color: '#5899E2'
+    }}}><h3>Seja Franqueado |</h3></Box>
+        <Box sx={{pr: 1, cursor: 'pointer',  "&: hover" : {
+        color: '#5899E2'
+    }}}><h3>Nossas Lojas |</h3></Box>
+        <Box sx={{pr: 1, cursor: 'pointer',  "&: hover" : {
+        color: '#5899E2'
+    }}}><h3>Fale Conosco</h3></Box>
        </Box>
          
     </Box>

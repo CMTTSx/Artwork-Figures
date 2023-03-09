@@ -31,11 +31,11 @@ export default function Main() {
     <Box sx={{ backgroundColor: '#FBF9FF', overflow: 'hidden' }}>
 
       <Typography sx={{
-        pl: 11,
+        pl: 6,
         pt: 5,
         fontSize: 30,
         fontWeight: 'bold',
-        mb: 15,
+        mb: 10,
       }}>Mais Procurados</Typography>
 
 

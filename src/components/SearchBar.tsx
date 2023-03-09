@@ -7,9 +7,8 @@ import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import shoppingCartIcon from '../assets/carrinho.png';
 import { Button, Typography } from '@mui/material';
-
+import Drawer from './Drawer';
 
 export default function InputWithIcon() {
   return (
@@ -18,17 +17,17 @@ export default function InputWithIcon() {
       flexDirection: 'row',
       ml: 'auto',
       backgroundColor: '#C5D1EB',
-      p: 1,
     }}>
 
-      <Box sx={{ '& > :not(style)': { m: 1 }, display: 'flex', mx: 'auto', backgroundColor: 'white', borderRadius: 10,}}>
+      <Box sx={{ '& > :not(style)': { m: 2 }, display: 'flex', mx: 'auto', backgroundColor: 'white', borderRadius: 10,}}>
         <FormControl variant="standard">
           <Input
+            fullWidth={true}
             disableUnderline={true}
             placeholder='Digite o que você procura...'
             endAdornment={
-              <InputAdornment position='start' >
-                <Button sx={{ ml: 25, color: 'white',}}>
+              <InputAdornment position='end' >
+                <Button sx={{ml: 20, color: 'white', borderRadius: '50%'}}>
                 <SearchIcon sx={{cursor: 'pointer', backgroundColor: '#00d0ff',  borderRadius: 5,  }} />
                 </Button>
               </InputAdornment>
@@ -37,9 +36,10 @@ export default function InputWithIcon() {
         </FormControl>
       </Box>
 
+      {/*Minha Conta*/}
       <Button sx={{
-        mr: '22rem',
-        ml: '-30rem',
+        height: 60,
+        ml: -50,
         color: '#000',
         borderRadius: 4,
         backgroundColor: '#276FBF',
@@ -49,22 +49,14 @@ export default function InputWithIcon() {
         Minha Conta
       </Button>
 
-      <Button sx={{
-        mr: 50,
-        ml: -40,
-        mt: 0,
+     
+      <Box sx={{
+        ml: 50,
       }}>
-      <Image src={shoppingCartIcon} alt='shoppingCartIcon'  />
-      <Typography sx={{
-        mt: 0,
-        ml: -2.7,
-        color: 'red',
-        borderRadius: 10,
-        fontWeight: 600,
+        <Drawer />
+      </Box>
 
-      }}>0</Typography>
-      </Button>
-
+     
 
 
     </Box>

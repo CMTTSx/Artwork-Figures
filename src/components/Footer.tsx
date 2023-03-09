@@ -7,6 +7,7 @@ import { Typography } from '@mui/material';
 import Image from 'next/image';
 
 import formaDePagamentoIcon from '../assets/formas_de_pagamento.png';
+import androidIOSIcon from '../assets/apple-android.png';
 
 const itemTitleConfig = {
   color: '#fff',
@@ -15,9 +16,18 @@ const itemTitleConfig = {
   fontSize: 20,
   cursor: 'pointer',
   textAlign: 'center',
+}
+
+const itemConfig = {
+  color: '#fff',
+  fontFamily: 'Scheherazade New, serif',
+  fontStyle: 'regular',
+  fontSize: 20,
+  cursor: 'pointer',
+  textAlign: 'center',
 
   "&: hover" : {
-    color: 'red',
+    color: '#5899E2',
   }
 }
 
@@ -28,42 +38,48 @@ export default function BasicGrid() {
         <Grid item xs={3}>
           <Box>
             <Typography sx={itemTitleConfig}>INSTITUCIONAL</Typography>
-            <Typography sx={itemTitleConfig}>Home</Typography>
-            <Typography sx={itemTitleConfig}>Sobre a Artwork Figures</Typography>
-            <Typography sx={itemTitleConfig}>Entregas</Typography>
-            <Typography sx={itemTitleConfig}>Trocas e devoluções</Typography>
+            <Typography sx={itemConfig}>Home</Typography>
+            <Typography sx={itemConfig}>Sobre a Artwork Figures</Typography>
+            <Typography sx={itemConfig}>Entregas</Typography>
           </Box>
         </Grid>
         <Grid item xs={1.4}>
           <Box>
               <Typography sx={itemTitleConfig}>MINHA CONTA</Typography>
-              <Typography sx={itemTitleConfig}>Meu Cadastro</Typography>
-              <Typography sx={itemTitleConfig}>Meu Pedido</Typography>
-              <Typography sx={itemTitleConfig}>Meu Carrinho</Typography>
+              <Typography sx={itemConfig}>Meu Cadastro</Typography>
+              <Typography sx={itemConfig}>Meu Pedido</Typography>
+              <Typography sx={itemConfig}>Meu Carrinho</Typography>
           </Box>
         </Grid>
         <Grid item xs={1.8}>
           <Box>
               <Typography sx={itemTitleConfig}>DÚVIDAS</Typography>
-              <Typography sx={itemTitleConfig}>FAQ - Dúvidas frequentes</Typography>
-              <Typography sx={itemTitleConfig}>Trocas e devoluções</Typography>
+              <Typography sx={itemConfig}>FAQ - Dúvidas frequentes</Typography>
+              <Typography sx={itemConfig}>Trocas e devoluções</Typography>
           </Box>
         </Grid>
 
         <Grid item xs={2}>
         <Box>
             <Typography sx={itemTitleConfig}>FALE CONOSCO</Typography>
-            <Typography sx={itemTitleConfig}>(38) 26848-0064</Typography>
-            <Typography sx={itemTitleConfig}>atendimento@artworkfigures.com.br</Typography>
+            <Typography sx={itemConfig}>(38) 26848-0064</Typography>
+            <Typography sx={itemConfig}>atendimento@artworkfigures.com.br</Typography>
         </Box>
         </Grid>
 
         <Grid item xs={0}>
         <Box>
           <Typography sx={itemTitleConfig}>FORMAS DE PAGAMENTO</Typography>
-        <Box sx={{ml: 3}}><Image src={formaDePagamentoIcon} alt='formas-de-pagamento-icon'/></Box>
+        <Box sx={{ml: 2}}><Image src={formaDePagamentoIcon} alt='formas-de-pagamento-icon' width={200} /></Box>
         </Box>
         </Grid>
+
+
+        <Grid item xs={0}>
+        <Box sx={{cursor: 'pointer', }}><Image src={androidIOSIcon} alt='androidIOSIcon' width={200} /></Box>
+        </Grid>
+
+
 
       </Grid>
     </Box>

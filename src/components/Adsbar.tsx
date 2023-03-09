@@ -27,7 +27,7 @@ export default function adsbar() {
       <Typography>PARCELAMENTO EM ATÉ 12X SEM JUROS NO CARTÃO</Typography>
     </Box>
 
-    <Box sx={{display: 'flex', mt: 1, ml: 14,}}>
+    <Box sx={{display: 'flex', mt: 1, ml: 14, cursor: 'pointer'}}>
       <Box sx={{mt: 0.3}}><Image src={favoritoIcon} alt='favoritoIcon' /></Box>
       <Typography sx={{pl: 1}}>NÃO TEM NA LOJA? FAÇA SEU PEDIDO!</Typography>
     </Box>
