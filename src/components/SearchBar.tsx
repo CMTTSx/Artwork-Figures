@@ -17,6 +17,7 @@ export default function InputWithIcon() {
       flexDirection: 'row',
       ml: 'auto',
       backgroundColor: '#C5D1EB',
+      p: 1,
     }}>
 
       <Box sx={{ '& > :not(style)': { m: 2 }, display: 'flex', mx: 'auto', backgroundColor: 'white', borderRadius: 10,}}>
@@ -41,10 +42,8 @@ export default function InputWithIcon() {
         height: 60,
         ml: -50,
         color: '#000',
-        borderRadius: 4,
-        backgroundColor: '#276FBF',
 
-      }} variant='contained'>
+      }}>
         <AccountCircleIcon sx={{pr: 0.1}} />
         Minha Conta
       </Button>
