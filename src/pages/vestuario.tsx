@@ -6,16 +6,18 @@ import Navbar from '../components/Navbar';
 import SearchBar from '../components/SearchBar'
 import Adsbar from '../components/Adsbar'
 import Main from '../components/MainVestuario'
+import { Box } from '@mui/material';
 
 
 function Vestuario() {
   return (
-   <>
+    <Box sx={{overflow: 'hidden', width: '100%' }}>
+
     <Navbar />
     <SearchBar />
     <Adsbar />
     <Main />
-   </>
+   </Box>
   )
 }
 
