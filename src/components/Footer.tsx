@@ -26,62 +26,88 @@ const itemConfig = {
   cursor: 'pointer',
   textAlign: 'center',
 
-  "&: hover" : {
+  "&: hover": {
     color: '#5899E2',
   }
 }
 
+const ContainerConfig = { 
+  display: 'flex',
+  width: '100%', 
+  backgroundColor: '#1F2232', 
+
+  '@media (min-width: 320px)': {
+    flexDirection: 'column',
+    mt: 20, 
+    p: 0,
+    pb: 0,
+  },
+  '@media (min-width: 1024px)': {
+    flexDirection: 'row',
+    mt: 20, 
+    pl: 5,
+    pr: 4,
+    ml: 'auto',
+  },
+  '@media (min-width: 1440px)': {
+    flexDirection: 'row',
+  },
+}
+
+const BoxConfig = {
+  pl: 0,
+  pt: 0,
+  pb: 0,
+
+  '@media (min-width: 320px)': {
+    mt: 5,
+  },
+  '@media (min-width: 1024px)': {
+    ml: 1,
+  },
+  '@media (min-width: 1440px)': {
+    mx: 'auto',
+    pb: 2,
+  },
+
+}
+
+
 export default function BasicGrid() {
   return (
-    <Box sx={{ flexGrow: 1, mt: 20, backgroundColor: '#1F2232', p: 2 }}>
-      <Grid container spacing={5}>
-        <Grid item xs={3}>
-          <Box>
-            <Typography sx={itemTitleConfig}>INSTITUCIONAL</Typography>
-            <Typography sx={itemConfig}>Home</Typography>
-            <Typography sx={itemConfig}>Sobre a Artwork Figures</Typography>
-            <Typography sx={itemConfig}>Entregas</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={1.4}>
-          <Box>
-              <Typography sx={itemTitleConfig}>MINHA CONTA</Typography>
-              <Typography sx={itemConfig}>Meu Cadastro</Typography>
-              <Typography sx={itemConfig}>Meu Pedido</Typography>
-              <Typography sx={itemConfig}>Meu Carrinho</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={1.8}>
-          <Box>
-              <Typography sx={itemTitleConfig}>DÚVIDAS</Typography>
-              <Typography sx={itemConfig}>FAQ - Dúvidas frequentes</Typography>
-              <Typography sx={itemConfig}>Trocas e devoluções</Typography>
-          </Box>
-        </Grid>
+    <Box sx={ContainerConfig}>
 
-        <Grid item xs={2}>
-        <Box>
-            <Typography sx={itemTitleConfig}>FALE CONOSCO</Typography>
-            <Typography sx={itemConfig}>(38) 26848-0064</Typography>
-            <Typography sx={itemConfig}>atendimento@artworkfigures.com.br</Typography>
-        </Box>
-        </Grid>
+      <Box sx={BoxConfig}>
+        <Typography sx={itemTitleConfig}>INSTITUCIONAL</Typography>
+        <Typography sx={itemConfig}>Home</Typography>
+        <Typography sx={itemConfig}>Sobre a Artwork Figures</Typography>
+        <Typography sx={itemConfig}>Entregas</Typography>
+      </Box>
 
-        <Grid item xs={0}>
-        <Box>
-          <Typography sx={itemTitleConfig}>FORMAS DE PAGAMENTO</Typography>
-        <Box sx={{ml: 2}}><Image src={formaDePagamentoIcon} alt='formas-de-pagamento-icon' width={200} /></Box>
-        </Box>
-        </Grid>
+      <Box sx={BoxConfig}>
+        <Typography sx={itemTitleConfig}>MINHA CONTA</Typography>
+        <Typography sx={itemConfig}>Meu Cadastro</Typography>
+        <Typography sx={itemConfig}>Meu Pedido</Typography>
+        <Typography sx={itemConfig}>Meu Carrinho</Typography>
+      </Box>
 
+      <Box sx={BoxConfig}>
+        <Typography sx={itemTitleConfig}>DÚVIDAS</Typography>
+        <Typography sx={itemConfig}>FAQ - Dúvidas frequentes</Typography>
+        <Typography sx={itemConfig}>Trocas e devoluções</Typography>
+      </Box>
 
-        <Grid item xs={0}>
-        <Box sx={{cursor: 'pointer', }}><Image src={androidIOSIcon} alt='androidIOSIcon' width={200} /></Box>
-        </Grid>
+      <Box sx={BoxConfig}>
+        <Typography sx={itemTitleConfig}>FALE CONOSCO</Typography>
+        <Typography sx={itemConfig}>(38) 26848-0064</Typography>
+        <Typography sx={itemConfig}>atendimento@artworkfigures.com.br</Typography>
+      </Box>
 
+      <Box sx={BoxConfig}>
+        <Typography sx={itemTitleConfig}>FORMAS DE PAGAMENTO</Typography>
+        <Box sx={itemConfig}><Image src={formaDePagamentoIcon} alt='formas-de-pagamento-icon' width={200} /></Box>
+      </Box>
 
-
-      </Grid>
     </Box>
   );
 }

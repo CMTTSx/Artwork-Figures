@@ -39,6 +39,19 @@ const iconConfig = {
 
 }
 
+const itemConfig = {
+  width: '18rem',
+  boxShadow: 10,
+  cursor: 'pointer',
+  mx: 'auto',
+
+  "&:hover": {
+    boxShadow: 20,
+  },
+
+}
+
+
 
 
 export default function Card() {
@@ -55,11 +68,10 @@ export default function Card() {
   }
 
   return (
-    <Box sx={{
-    }}>
+    <Box sx={itemConfig}>
 
     <Box>
-    <Image src={kakashiIcon} alt='imagemIcon' />
+    <Image src={kakashiIcon} alt='imagemIcon' width={286} />
     
     <Box sx={{display: 'flex', flexDirection: 'column'}}>
     
@@ -68,7 +80,7 @@ export default function Card() {
       flexDirection: 'column',
       ml: 'auto',
       mr: 'end',
-      mt: -28,
+      mt: -32,
     }}>
       <Button sx={iconConfig}
       onClick={favorite}
@@ -91,9 +103,10 @@ export default function Card() {
         fontFamily: 'Scheherazade New , serif',
         fontWeight:  'bold',
         color: '#000',
+        ml: 1,
 
     }}>NARUTO</Typography>
-    <Typography sx={{display: 'flex'}}>Action Figure Kakashi Hatake</Typography>
+    <Typography sx={{display: 'flex', ml: 1}}>Action Figure Kakashi Hatake</Typography>
     <Button sx={buttonConfig}>Adicionar ao Carrinho</Button>
     <Typography sx={{textAlign: 'end', pr: 3, color: '#00BF2A'}}>R$190,80</Typography>
     <Typography sx={{textAlign: 'end', pr: 3}}>Ou 12x de 15,90 s/Juros</Typography>

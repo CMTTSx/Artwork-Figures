@@ -15,16 +15,24 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const itemConfig = {
-  width: '80%',
-  boxShadow: 10,
-  cursor: 'pointer',
+const GridContainerConfig = {
+  display: 'flex',
+  mx: 'auto',
+  flexWrap: 'wrap',
 
-  "&:hover": {
-    boxShadow: 20,
-  }
 }
 
+const CardConfig = {
+  mx:20,
+  mt: 5,
+
+  '@media (min-width: 320px)': {
+    mx: 'auto',
+  },
+  '@media (min-width: 1440px)': {
+    mx: 10,
+  },
+}
 
 export default function Main() {
   return (
@@ -38,36 +46,17 @@ export default function Main() {
         mb: 10,
       }}>Mais Procurados</Typography>
 
+     <Box sx={GridContainerConfig}>
+      <Box sx={CardConfig}><Card /></Box>
+      <Box sx={CardConfig}><Card /></Box>
+      <Box sx={CardConfig}><Card /></Box>
+      <Box sx={CardConfig}><Card /></Box>
+      <Box sx={CardConfig}><Card /></Box>
+      <Box sx={CardConfig}><Card /></Box>
+      <Box sx={CardConfig}><Card /></Box>
+      <Box sx={CardConfig}><Card /></Box>
+     </Box>
 
-      <Box sx={{ width: '100%', height: '50rem' }}>
-        <Grid sx={{ml: 0, mr: 'auto'}} container spacing={5} columns={32}>
-          <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
-          </Grid>
-          <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
-          </Grid>
-          <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
-          </Grid>
-          <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
-          </Grid>
-          <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
-          </Grid>
-          <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
-          </Grid>
-          <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
-          </Grid>
-          <Grid item xs={8}>
-            <Item sx={itemConfig} ><Card /></Item>
-          </Grid>
-        </Grid>
-      </Box>
-      
       <Navigation />
       <Footer />
       </Box>

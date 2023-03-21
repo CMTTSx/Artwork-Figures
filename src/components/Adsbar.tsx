@@ -7,31 +7,79 @@ import freteRapidoIcon from '../assets/frete-rapido.png';
 import cardParcelaIcon from '../assets/cardIcon.png';
 import favoritoIcon from '../assets/coracao.png';
 
-export default function adsbar() {
+
+const BoxConfig = {
+  display: 'flex',
+  width: '100%',
+  backgroundColor: '#F7F7F7',
+  px: 2,
+}
+
+const AdsBarConfig = {
+  display: 'flex',
+  flexDirection: 'column',
+  width: '100%',
+  
+  '@media (min-width: 320px)': {
+    mx: 'auto',
+    textAlign: 'center',
+    pt: 1,
+  },
+  '@media (min-width: 1024px)': {
+    fontSize: 16,
+    flexDirection: 'row',
+    
+  },
+}
+
+const TypoAdsBar = {
+
+  '@media (min-width: 320px)': {
+    fontSize: 10,
+    mx: 'auto',
+  },
+  '@media (min-width: 1024px)': {
+    fontSize: 16,
+    
+  },
+}
+
+const ContainerConfig = {
+  display: 'flex',
+  flexDirection: 'row', 
+  width: '100%',
+
+  '@media (min-width: 320px)': {
+    ml: -2,
+  },
+}
+
+export default function AdsBar() {
   return (
-    <Box sx={{
-      display: 'flex',
-      backgroundColor: '#F7F7F7'
+    <Box sx={BoxConfig}>
     
-    }}>
+    <Box sx={ContainerConfig}>
     
-    <Box sx={{display: 'flex', flexDirection: 'row', width: '100%' }}>
-    
-    <Box sx={{ml: 8, mt: 1, display: 'flex' }}>
+    <Box sx={AdsBarConfig}>
+    <Box sx={{mx: 'auto',}} >
     <Image src={freteRapidoIcon} alt='freterapidoicon' />
-    <Typography>FRETE GRÁTIS PARA TODO O BRASIL. APROVEITE!</Typography>
+    </Box>
+    <Typography sx={TypoAdsBar}>FRETE GRÁTIS PARA TODO O BRASIL. APROVEITE!</Typography>
     </Box>
 
-    <Box sx={{display: 'flex', mt: 1, ml: 14,}}>
+    <Box sx={AdsBarConfig}>
+      <Box sx={{mx: 'auto',}} >
       <Image src={cardParcelaIcon} alt='cardparcelaIcon' />
-      <Typography>PARCELAMENTO EM ATÉ 12X SEM JUROS NO CARTÃO</Typography>
+      </Box>
+      <Typography sx={TypoAdsBar}>PARCELAMENTO EM ATÉ 12X SEM JUROS NO CARTÃO</Typography>
     </Box>
 
-    <Box sx={{display: 'flex', mt: 1, ml: 14, cursor: 'pointer'}}>
-      <Box sx={{mt: 0.3}}><Image src={favoritoIcon} alt='favoritoIcon' /></Box>
-      <Typography sx={{pl: 1}}>NÃO TEM NA LOJA? FAÇA SEU PEDIDO!</Typography>
+    <Box sx={AdsBarConfig}>
+      <Box sx={{mx: 'auto',}} >
+      <Box><Image src={favoritoIcon} alt='favoritoIcon' /></Box>
+      </Box>
+      <Typography sx={TypoAdsBar}>NÃO TEM NA LOJA? FAÇA SEU PEDIDO!</Typography>
     </Box>
-
 
     </Box>
 
