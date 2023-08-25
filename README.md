@@ -9,7 +9,7 @@ Projeto sistema. versão básica para demonstração de habilidade nas tecnologi
 
 # 🛠️ Tecnologias aprendidas e utilizadas 🛠️
 
-1-REACT
+1-NEXTJS
 
 2-AXIOS
 
